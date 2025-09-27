@@ -109,39 +109,52 @@ Después de guardar y cerrar el archivo, tendremos que volver a cargar Apache pa
 ## PASO 3 Instalación de PHP.
 PHP es el componente que procesa el código para mostrar contenido dinámico al usuario final.  
 Para instalarlo ejecutamos el siguiente comando:  
-sudo apt install php libapache2-mod-php  
+**sudo apt install php libapache2-mod-php**  
 Una vez instalado comprobamos la versión con el siguiente comando:  
-php -v  
-<img width="563" height="117" alt="image" src="https://github.com/user-attachments/assets/2b138095-e915-4b97-bf1a-eb0a77fc6d81" />
+**php -v**  
+
+<img width="563" height="117" alt="image" src="https://github.com/user-attachments/assets/2b138095-e915-4b97-bf1a-eb0a77fc6d81" />  
 
 ## PASO 4 Probar el procesamiento de un archivo PHP en el servidor web.
 A continuación, vamos a crear una página php y vamos a ver el funcionamiento, vamos a verificar que Apache puede gestionar solicitudes y procesar solicitudes de archivos PHP.  
 1ro creamos un nuevo archivo llamado info.php (podría haber sido index.php) en nuestra carpeta root web.  
-nano /var/www/my_domain/info.php  
-<img width="940" height="195" alt="image" src="https://github.com/user-attachments/assets/22eb621c-409d-419e-aa98-6093288647fd" />
+**nano /var/www/my_domain/info.php**  
+
+<img width="940" height="195" alt="image" src="https://github.com/user-attachments/assets/22eb621c-409d-419e-aa98-6093288647fd" />  
+
 Una vez programado, guardamos y salimos de nano.  
 Para probar este archivo, nos vamos al navegador web y accedemos a nuestra ip(localhost) del servidor seguido del nombre del archivo.  
-http://localhost/info.php	y si nos muestra la siguiente pantalla quiere decir que toda va funcionando.  
-<img width="940" height="767" alt="image" src="https://github.com/user-attachments/assets/9a7e6b28-0cc8-4cb8-ba9a-ad399493ec38" />
+**http://localhost/info.php**	y si nos muestra la siguiente pantalla quiere decir que toda va funcionando.  
+
+<img width="940" height="767" alt="image" src="https://github.com/user-attachments/assets/9a7e6b28-0cc8-4cb8-ba9a-ad399493ec38" />  
+
 Esta página muestra información básica sobre nuestro servidor desde la perspectiva de PHP. Se aconseja una vez probado el funcionamiento, eliminar el archivo creado info.php ya que contiene información confidencial sobre nuestro entorno PHP y servidor de Ubuntu.  
-Para ello, ejecutamos sudo rm  /var/www/my_domain/info.php  
+Para ello, ejecutamos **sudo rm  /var/www/my_domain/info.php**  
 
 ## PASO 5 Instalación de MySQL
 Ahora que tenemos un servidor web funcional, tenemos que instalar un sistema de base de datos para poder almacenar y gestionar los datos de un sitio. MySQL es un sistema de administración de bases de datos popular que se utiliza en entornos PHP.  
 Lo instalamos con el siguiente comando:   
-sudo apt install mysql-server  
-Una vez instalado se recomienda ejecutar una secuencia de comandos de seguridad que viene preinstalada en MySQL la cual eliminará algunos ajustes predeterminados poco seguros y se bloqueará el acceso a un sistema de base de datos. La secuencia es la siguiente:  
-sudo mysql_secure_installation   nos pregunta si queremos configurar el VALIDATE PASSWORD PLUGIN (la dejaremos deshabilitada ya que no supone peligro alguno).  
-<img width="711" height="294" alt="image" src="https://github.com/user-attachments/assets/e782d8cf-4726-4633-98e7-8c492a270c2f" />
-Nosotros le indicamos que no queremos activar clave alguna.   
-<img width="940" height="264" alt="image" src="https://github.com/user-attachments/assets/12236bf1-1d96-49f4-b861-1a001a665f0d" />
+**sudo apt install mysql-server**  
+Una vez instalado se recomienda ejecutar una **secuencia de comandos de seguridad** que viene preinstalada en MySQL la cual eliminará algunos ajustes predeterminados poco seguros y se bloqueará el acceso a un sistema de base de datos. La secuencia es la siguiente:  
+**sudo mysql_secure_installation**   nos pregunta si queremos configurar el VALIDATE PASSWORD PLUGIN (la dejaremos deshabilitada ya que no supone peligro alguno).  
+
+<img width="711" height="294" alt="image" src="https://github.com/user-attachments/assets/e782d8cf-4726-4633-98e7-8c492a270c2f" />  
+
+Nosotros le indicamos que no queremos activar clave alguna.  
+
+<img width="940" height="264" alt="image" src="https://github.com/user-attachments/assets/12236bf1-1d96-49f4-b861-1a001a665f0d" />  
+
 Independientemente de que elijamos instalar el VALIDATE PASSWORD PLUGIN o no, el servidor nos pedirá una contraseña para el usuario root de MySQL que no tiene nada que ver con el root del sistema. El usuario root de base de datos es un usuario administrativo con privilegios completos sobre el sistema de base de datos.  
-Para el resto de las preguntas contestaremos con sí , y Enter en cada mensaje. Con ello, eliminaremos algunos usuarios anónimos y la base de datos de prueba, se deshabilitarán las credenciales de inicio de sesión remoto de root y se cargarán estas nuevas reglas para que MySQL aplique de inmediato los cambios que realizó.  
-<img width="940" height="778" alt="image" src="https://github.com/user-attachments/assets/b973f73a-5aa2-4a62-8cb8-cc2fbae6d4e9" />
+Para el resto de las preguntas contestaremos con <u>**sí**</u> , y Enter en cada mensaje. Con ello, eliminaremos algunos usuarios anónimos y la base de datos de prueba, se deshabilitarán las credenciales de inicio de sesión remoto de root y se cargarán estas nuevas reglas para que MySQL aplique de inmediato los cambios que realizó.  
+
+<img width="940" height="778" alt="image" src="https://github.com/user-attachments/assets/b973f73a-5aa2-4a62-8cb8-cc2fbae6d4e9" />  
+
 Tras finalizar, comprobamos que se puede iniciar en la consola de MySQL escribiendo lo siguiente:  
-sudo mysql  
-<img width="940" height="356" alt="image" src="https://github.com/user-attachments/assets/005ebe7f-2114-4cf1-96a1-ad07011229c7" />
-Para salir de la consola de MySQL tecleamos exit  
+**sudo mysql**  
+
+<img width="940" height="356" alt="image" src="https://github.com/user-attachments/assets/005ebe7f-2114-4cf1-96a1-ad07011229c7" />  
+
+Para salir de la consola de MySQL tecleamos **exit**  
 
 
 
