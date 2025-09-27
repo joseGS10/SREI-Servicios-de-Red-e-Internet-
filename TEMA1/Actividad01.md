@@ -6,18 +6,23 @@ A continuación, ejecutamos el comando **sudo apt install apache2**, el cual ins
 
 <img width="940" height="571" alt="image" src="https://github.com/user-attachments/assets/d20b7a50-b2b6-4ab9-81bc-98c5db1ca125" />  
 
-Tras confirmar que, sí deseamos continuar, se concluye instalando el paquete apache2  
+Tras confirmar que, **sí** deseamos continuar, se concluye instalando el paquete apache2  
 Seguidamente, se debe configurar el firewall para permitir tráfico HTTP y HTTPS.  
 Como no tenemos certificado TSL/SSL para permitir tráfico HTTPS en el servidor, lo configuraremos para permitir el tráfico únicamente por el puerto 80 (tráfico web no cifrado)  
-Y para ello ejecutamos el comando sudo ufw allow in “Apache” en cual abre únicamente el puerto 80(tráfico web normal no cifrado) . De esta forma ya se permite tráfico en el puerto 80 a través del firewall.  
-<img width="665" height="151" alt="image" src="https://github.com/user-attachments/assets/54dd1302-78ca-4476-a162-9f71c6246ef1" />
-Ahora, comprobamos que el servidor Apache funciona.  
+Y para ello ejecutamos el comando **sudo ufw allow in “Apache”** en cual abre únicamente el puerto 80(tráfico web normal no cifrado) . De esta forma ya se permite tráfico en el puerto 80 a través del firewall.  
+
+<img width="665" height="151" alt="image" src="https://github.com/user-attachments/assets/54dd1302-78ca-4476-a162-9f71c6246ef1" />  
+
+Ahora, comprobamos que el **servidor Apache funciona**.  
 Para ello, tenemos 2 formas:  
-* nos vamos al navegador y ponemos http://localtost  
-* o curl http://localhost  
+* nos vamos al navegador y ponemos **http://localtost**  
+* o *curl http://localhost**    
 y tiene que aparecer la página de bienvenida de  Apache como vemos en la siguiente imagen:
-<img width="941" height="593" alt="image" src="https://github.com/user-attachments/assets/b9f14387-5714-4308-b4f5-fd9bd6d3fbed" />
-También podemos averiguar nuestra IP mediante el comando hostname -I y a continuación en el navegador ponemos http://nuestra_ip y debería salirnos la pagina de bienvenida de Apache
+
+<img width="941" height="593" alt="image" src="https://github.com/user-attachments/assets/b9f14387-5714-4308-b4f5-fd9bd6d3fbed" />  
+
+También podemos averiguar nuestra IP mediante el comando **hostname -I** y a continuación en el navegador ponemos **http://nuestra_ip** y debería salirnos la pagina de bienvenida de Apache  
+
 ## PASO 2 Creación de un host virtual para un mi sitio web.
 Esto es necesario cuando se quiere alojar más de un dominio en un mismo servidor.  
 Cuando instalamos Apache , se nos crea un virtual host por efecto en /var/www/html y este es suficiente si trabajamos con un único sitio web. Pero si vamos a guardar varios sitios web en deseable crear un virtual host en /var/www/my_domain para cada sitio web.  
