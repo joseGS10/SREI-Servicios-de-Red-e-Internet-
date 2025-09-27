@@ -95,7 +95,7 @@ Desde línea de comandos: **curl http://localhost**
 <img width="940" height="168" alt="image" src="https://github.com/user-attachments/assets/471ce191-8b7b-4937-ad1f-129b37bc7d86" />  
 
 Como podemos ver funciona. Dejaremos este archivo index.html como pagina de destino temporal de nuestro sitio hasta que se configure un archivo index.php que lo sustituya. Cuando lo hagamos, tendremos que eliminar el archivo index.html del root de documentos, o cambiarle en nombre, ya que tendría precedencia sobre un archivo index.php por defecto.  
-<u>Una última nota.</u>  
+***Una última nota.***    
 **¿Qué es DirectoryIndex?**. Es el nombre de la página que voy a servir por defecto. En un principio, hemos creado un index.html que tendría prioridad sobre un index.php.   
 Esta situación de prioridad del .html sobre el .php es útil para establecer páginas de mantenimiento de aplicaciones PHP, dado que se puede crear un archivo index.html temporal que contenga un mensaje informaivo para los visitantes. Una vez finalizado el mantenimiento, el archivo index.html se eliminará del root de documentos o se renombrará para volver a mostrar la página habitual de la aplicación(el index.php)  
 Para programar este comportamiento, tendremos que editar el archivo /etc/apache2/mods-enabled/dir.conf y modificar el orden en el que el archivo index.php se enumera en la directiva **DirectoryIndex.**    
@@ -145,7 +145,7 @@ Nosotros le indicamos que no queremos activar clave alguna.
 <img width="940" height="264" alt="image" src="https://github.com/user-attachments/assets/12236bf1-1d96-49f4-b861-1a001a665f0d" />  
 
 Independientemente de que elijamos instalar el VALIDATE PASSWORD PLUGIN o no, el servidor nos pedirá una contraseña para el usuario root de MySQL que no tiene nada que ver con el root del sistema. El usuario root de base de datos es un usuario administrativo con privilegios completos sobre el sistema de base de datos.  
-Para el resto de las preguntas contestaremos con <u>**sí**</u> , y Enter en cada mensaje. Con ello, eliminaremos algunos usuarios anónimos y la base de datos de prueba, se deshabilitarán las credenciales de inicio de sesión remoto de root y se cargarán estas nuevas reglas para que MySQL aplique de inmediato los cambios que realizó.  
+Para el resto de las preguntas contestaremos con ***sí***, y Enter en cada mensaje. Con ello, eliminaremos algunos usuarios anónimos y la base de datos de prueba, se deshabilitarán las credenciales de inicio de sesión remoto de root y se cargarán estas nuevas reglas para que MySQL aplique de inmediato los cambios que realizó.  
 
 <img width="940" height="778" alt="image" src="https://github.com/user-attachments/assets/b973f73a-5aa2-4a62-8cb8-cc2fbae6d4e9" />  
 
