@@ -13,5 +13,8 @@ Para conocer las diferentes directivas ponemos en el buscador **“Apache docs�
 
     **1. Apache utilizará el puerto 81 además del 80.**
 La directiva que tiene que ver con los puertos de escucha, se llama “listen [IP address]”. 
-Para ello nos vamos al fichero de configuración ports.conf ubicado en /etc/apache2, lo editamos con **sudo nano /etc/apache2/ports.conf**
-……dentro escribimos una nueva línea Listen 81 
+
+Para ello nos vamos al fichero de configuración ports.conf ubicado en /etc/apache2, lo editamos con **sudo nano /etc/apache2/ports.conf** 
+
+……dentro escribimos una nueva línea Listen 81  
+
