@@ -25,12 +25,11 @@ Para ello nos vamos al fichero de configuración ports.conf ubicado en /etc/apac
 Y ahora, como cada vez que se realiza cualquier modificación en un archivo de configuración, hay que comprobar que la sintaxis escrita está bien y para ello ejecutamos el comando **apachectl -t** 
 
 <img width="941" height="84" alt="image" src="https://github.com/user-attachments/assets/d2e60136-2c2d-4888-8f03-f852b7e05042" /> 
-Ahora, tenemos que recargar Apache con : sudo systemctl restart apache2 ya que hemos realizado una modificación en uno de sus archivos de configuración. 
+Ahora, tenemos que recargar Apache con : **sudo systemctl** restart apache2 ya que hemos realizado una modificación en uno de sus archivos de configuración. 
 
 <img width="581" height="61" alt="image" src="https://github.com/user-attachments/assets/f053a2f9-c12d-4983-8745-60895f0a016c"  /> 
 
-
-Y, para terminar, comprobamos que funciona abriendo el navegador y escribiendo la dirección **localhost:81 ** 
+Y, para terminar, comprobamos que funciona abriendo el navegador y escribiendo la dirección **localhost:81** 
 
 <img width="940" height="526" alt="image" src="https://github.com/user-attachments/assets/b4ac6123-eb2f-4f22-8f12-5082a4355b2c" /> 
 
