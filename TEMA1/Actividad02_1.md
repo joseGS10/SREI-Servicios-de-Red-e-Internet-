@@ -37,7 +37,8 @@ Y, para terminar, comprobamos que funciona abriendo el navegador y escribiendo l
 
 <img width="940" height="526" alt="image" src="https://github.com/user-attachments/assets/b4ac6123-eb2f-4f22-8f12-5082a4355b2c" /> <br><br>
 
-**2. Añadir el dominio “marisma.intranet” en el fichero “hosts”** <br>
+**2. Añadir el dominio “marisma.intranet” en el fichero “hosts”**  <br>
+
 El fichero hosts se encuentra en /etc.  
 
 Lo editamos con nano de la siguiente forma:  **sudo nano /etc/hosts** 
