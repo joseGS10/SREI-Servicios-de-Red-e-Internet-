@@ -11,7 +11,8 @@ Ambos se encuentran en **/var/apache2**
 Todos los cambios que se van a realizar en estos ficheros son a través de **directivas**. Una directiva no es más que un nombre con una serie de argumentos (como una función).  
 Para conocer las diferentes directivas ponemos en el buscador **“Apache docs”** seleccionamos la última versión, y pinchamos en **“Directivas de configuración en tiempo de ejecución”**  y aparece todas las directivas.  
 
-**Apache utilizará el puerto 81 además del 80.**
+**1. Apache utilizará el puerto 81 además del 80.** 
+
 La directiva que tiene que ver con los puertos de escucha, se llama “listen [IP address]”. 
 
 Para ello nos vamos al fichero de configuración ports.conf ubicado en /etc/apache2, lo editamos con **sudo nano /etc/apache2/ports.conf** 
