@@ -17,5 +17,9 @@ La directiva que tiene que ver con los puertos de escucha, se llama “listen [I
 
 Para ello nos vamos al fichero de configuración ports.conf ubicado en /etc/apache2, lo editamos con **sudo nano /etc/apache2/ports.conf** 
 
-……dentro escribimos una nueva línea Listen 81  
+……dentro escribimos una nueva línea Listen 81 
+
+
+<img width="1034" height="500" alt="image" src="https://github.com/user-attachments/assets/3e7c6c39-4d0e-4a9d-87ba-1a865c596406" /> 
+
 
