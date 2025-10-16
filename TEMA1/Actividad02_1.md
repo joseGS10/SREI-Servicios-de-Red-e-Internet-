@@ -39,3 +39,27 @@ El fichero hosts se encuentra en /etc.
 Lo editamos con nano de la siguiente forma:  **sudo nano /etc/hosts** 
 
 
+<img width="798" height="353" alt="image" src="https://github.com/user-attachments/assets/10a3102a-6d8f-4e96-bc37-3cee96fe760d" /> 
+le añadimos el dominio **“marisma.intranet”**  junto con la dirección localhost que es 127.0.0.1 y ahora guardamos y salimos de la edición.  
+
+En este caso, tras modificar el fichero **“hosts”** no se requiere que reiniciemos Apache. Todo lo contrario que con las directivas que siempre que modifiquemos alguna hay que reiniciar Apache. 
+
+He de decir que el nombre del dominio **“marisma.intrranet”** también se podía haber colocado en la primera línea del fichero a continuación de localhost separado por un espacio. 
+
+**¿Cómo comprobamos que funciona?**
+Si hacemos **ping a localhost** me va a responder con **127.0.0.1** 
+
+<img width="871" height="183" alt="image" src="https://github.com/user-attachments/assets/bc02ccd5-faad-49b9-afa4-5ced53c16219" /> 
+
+Si hacemos **ping a marisma.intranet** me responde también con *127.0.0.1* 
+
+<img width="980" height="198" alt="image" src="https://github.com/user-attachments/assets/e6753692-7af9-4430-a986-0bafc24dbfa3" /> 
+
+
+De igual manera, si en el navegador ponemos **http://marisma.intranet** nos responde. 
+
+<img width="1059" height="298" alt="image" src="https://github.com/user-attachments/assets/55f82d7f-5095-4259-add7-fb2650320b11" />   
+
+**3. Cambia la directiva “ServerTokens” para mostrar el nombre del producto.** 
+
+
