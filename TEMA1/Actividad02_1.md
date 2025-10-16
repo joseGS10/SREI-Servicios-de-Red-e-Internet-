@@ -1,4 +1,4 @@
-# ACTIVIDAD 2.TEMA1. CONFIGURACIÓN BÁSICA DE APACHE. <br>
+# ACTIVIDAD 2_1.TEMA1. CONFIGURACIÓN BÁSICA DE APACHE. <br>
 Poner en marcha el servidor y realizar los siguientes cambios en los archivos de configuración:  
 **sudo systemctl start apache2** -> lo pone en marcha  
 **sudo systemctl status apache2**  o **sudo service apache2 status** -> lo comprueba  
@@ -200,6 +200,7 @@ Para hacer efectivo esta redirección, tenemos que acceder al archivo de configu
 **sudo nano /etc/apache2/apache2.conf** 
 
 <img width="813" height="503" alt="image" src="https://github.com/user-attachments/assets/6d37eb78-ef66-49e4-a774-a65754a22b5c" /> 
+
 **¿Como lo comprobamos?** 
 
 **curl localhost/prueba/pagina.html** 
@@ -244,19 +245,19 @@ El **userdir** sirve para que el administrador del sitio web de permiso a los us
 
 Todo lo que el usuario incluya en su directorio **“public_html“* podrá ser visto desde Apache. 
 
-    • Creamos el  directorio **public_html**  dentro de nuestro directorio de trabajo **mkdir  ~/public_html** 
+    • Creamos el  directorio public_html  dentro de nuestro directorio de trabajo **mkdir  ~/public_html** 
     
-    • Creamos un fichero **index.html** dentro del directorio **public_html** con el siguiente contenido: 
+    • Creamos un fichero index.html dentro del directorio **public_html** con el siguiente contenido: 
     
-      **sudo nano  ~/public_html/index.html** 
+    sudo nano  ~/public_html/index.html
       
 
 <img width="1026" height="157" alt="image" src="https://github.com/user-attachments/assets/a61ce45d-c2f9-4396-9233-18e36501bdd2" /> 
     • A continuación, hay que dar permisos 755 sobre nuestro directorio de trabajo y sobre **public_html**  para que Apache pueda entrar hasta el directorio **html_public** donde el usuario colgará el contenido que él quiera. Para ello: 
     
-                **•  chmod 755 ~** 
+                •  chmod 755 ~ 
                 
-                **•  chmod 755 ~/public_html** 
+                •  chmod 755 ~/public_html
                 
 
 Ahora para acudir a mi sitio web, ponemos **localhost /~nombre usuario** y con esto nos busca la página index.html que tenga dentro de **“public_html”** de ese usuario. 
