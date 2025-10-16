@@ -35,9 +35,9 @@ Ahora, tenemos que recargar Apache con : **sudo systemctl** restart apache2 ya q
 
 Y, para terminar, comprobamos que funciona abriendo el navegador y escribiendo la dirección **localhost:81** 
 
-<img width="940" height="526" alt="image" src="https://github.com/user-attachments/assets/b4ac6123-eb2f-4f22-8f12-5082a4355b2c" /> 
+<img width="940" height="526" alt="image" src="https://github.com/user-attachments/assets/b4ac6123-eb2f-4f22-8f12-5082a4355b2c" /> <br><br>
 
-**2. Añadir el dominio “marisma.intranet” en el fichero “hosts”** 
+**2. Añadir el dominio “marisma.intranet” en el fichero “hosts”** <br>
 El fichero hosts se encuentra en /etc.  
 
 Lo editamos con nano de la siguiente forma:  **sudo nano /etc/hosts** 
@@ -62,8 +62,9 @@ Si hacemos **ping a marisma.intranet** me responde también con *127.0.0.1*
 
 De igual manera, si en el navegador ponemos **http://marisma.intranet** nos responde. 
 
-<img width="1059" height="298" alt="image" src="https://github.com/user-attachments/assets/55f82d7f-5095-4259-add7-fb2650320b11" />   
+<img width="1059" height="298" alt="image" src="https://github.com/user-attachments/assets/55f82d7f-5095-4259-add7-fb2650320b11" />   <br><br>
 
-**3. Cambia la directiva “ServerTokens” para mostrar el nombre del producto.** 
+**3. Cambia la directiva “ServerTokens” para mostrar el nombre del producto.** <br>
+
 
 
