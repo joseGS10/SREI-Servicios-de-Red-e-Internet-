@@ -22,4 +22,8 @@ Para ello nos vamos al fichero de configuración ports.conf ubicado en /etc/apac
 
 <img width="1034" height="500" alt="image" src="https://github.com/user-attachments/assets/3e7c6c39-4d0e-4a9d-87ba-1a865c596406" /> 
 
+Y ahora, como cada vez que se realiza cualquier modificación en un archivo de configuración, hay que comprobar que la sintaxis escrita está bien y para ello ejecutamos el comando apachectl -t 
+
+
+<img width="941" height="84" alt="image" src="https://github.com/user-attachments/assets/d2e60136-2c2d-4888-8f03-f852b7e05042" /> 
 
