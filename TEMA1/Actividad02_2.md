@@ -72,6 +72,7 @@ El contenido del **fichero hosts** después de estas operaciones.
 
 <img width="940" height="352" alt="image" src="https://github.com/user-attachments/assets/20b50de6-44aa-4888-b986-82a4adf38fa4" /> 
 
+
 **3. Crea un script que nos permita crear una página web con un título, una cabecera y 
 un mensaje.** 
 
