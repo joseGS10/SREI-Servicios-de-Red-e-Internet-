@@ -277,9 +277,17 @@ Para probar un alias, vamos a crear en el fichero **apache2.conf** una entrada q
 
 Esta directiva sirve para indicar comportamientos(opciones de configuración) dentro de un determinado directorio. Entre las opciones que se utilizan:      
 -	**FollowSymLinks**: indica que permite enlaces simbólicos.
--	
+  
 -	**Indexes**: cuando se activa indexes en un directorio, mostrará un listado de todos los archivos y subdirectorios dentro de ese directorio si no encuentra un archivo de índice (como index.html o index.php). Hay que tener cuidado con el uso de esta opción ya que si no encuentra lo que busca lista el contenido del directorio.Esta opción no se suele activar.
   
+Se usan de la siguiente forma y se suelen colocar en **etc/apache2/apache2.conf**: 
+
+<Directory /web/docs> 
+
+	Options Indexes FollowSymLinks 
+    
+</Directory> 
+
 
 
 
