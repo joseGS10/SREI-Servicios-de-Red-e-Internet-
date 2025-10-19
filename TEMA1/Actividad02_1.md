@@ -288,6 +288,27 @@ Options Indexes FollowSymLinks
 
 </Directory> 
 
+**Vamos a comprobar si Apache indexa los directorios.** 
+
+Creamos un directorio **prueba3** en **/var/www/http/** 
+
+Y dentro de él creamos un fichero **prueba.html** 
+
+<img width="780" height="82" alt="image" src="https://github.com/user-attachments/assets/22a34cbb-af2a-43c6-8e3a-a99dd5a5354c" /> 
+
+Comprobamos en el navegador y resulta que me saca el contenido del directorio prueba3; eso quiere decir que está indexando y como no encuentra ningún **index.html** o **index.php**, lo que hace es listarme el contenido del directorio **prueba3** poniendo al descubierto información que no queramos que vean otros. 
+<img width="411" height="182" alt="image" src="https://github.com/user-attachments/assets/f80d3f85-0b92-4190-bedd-ca6450bb2e2d" /> 
+
+**¿Cómo hacemos para desactivar el indexes?** 
+Tendremos que acceder al fichero de configuración **apache2.conf** y modificar esta opción poniéndole un – delante (en este caso si presenta más opciones tendremos que ponerle un + delante) o borrándola literalmente. 
+<img width="940" height="599" alt="image" src="https://github.com/user-attachments/assets/a7856d8a-3331-4232-9c14-0cb85c81aa49" /> 
+Guardamos, cerramos y reiniciamos Apache con **sudo systemctl restart apache2** 
+
+Probamos de nuevo y ahora vemos que ya no nos deja acceder. 
+
+<img width="505" height="151" alt="image" src="https://github.com/user-attachments/assets/b5a316ed-362f-4623-a70f-65a1624d8241" /> 
+
+
 
 
 
