@@ -91,7 +91,9 @@ Y ahora, comprobamos su funcionamiento.
 Finalmente, comprobamos que se ha creado la página web. 
 
 <img width="940" height="418" alt="image" src="https://github.com/user-attachments/assets/2ac9a2a1-bfba-4400-8ebd-84351978b696" /> 
+
 **sudo cp web.html public_html/** 
+
 
 <img width="940" height="321" alt="image" src="https://github.com/user-attachments/assets/ff00e403-5c00-4aad-a600-820b168f0383" /> 
 
