@@ -284,7 +284,7 @@ Se usan de la siguiente forma y se suelen colocar en **etc/apache2/apache2.conf*
 
 <Directory /web/docs> 
 
-	Options Indexes FollowSymLinks 
+Options Indexes FollowSymLinks 
     
 </Directory> 
 
