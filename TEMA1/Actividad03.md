@@ -38,5 +38,30 @@ Require ip 192.168.1.100
 
 </Directory> 
 
+**<Directory /var/www/example1>** 
+
+Order Allow,Deny 
+
+Deny from All 
+
+Allow from 192.168.1.100 
+
+</Directory> 
+
+En este segundo caso: primero se permite acceso al recurso a la IP especificada y luego se  
+
+deniega a todos. Por lo que concluimos diciendo que este recurso está denegado para todos ya  
+
+que la orden **Denny** es la última que se ejecuta..  
+
+La directiva equivalente con Require: 
+
+<Directory>  
+   
+Require all denied  
+
+</Directory>  
+
+
 
 
