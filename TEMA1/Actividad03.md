@@ -22,7 +22,8 @@ Order Deny,Allow
 Deny from All  
 
 Allow from 192.168.1.100  
-</Directory>  
+&lt;/Directory&gt; 
+
 
 En este primer caso, el orden es : primero se deniega a todos y luego se permite acceso al  
 
@@ -62,6 +63,7 @@ Require all denied
 
 </Directory>  
 </Directory> 
+
 
 
 
