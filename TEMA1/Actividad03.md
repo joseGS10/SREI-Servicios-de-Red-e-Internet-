@@ -127,8 +127,10 @@ La directiva equivalente con Require:
 &nbsp;&nbsp;&nbsp;&lt;/Directory&gt; 
 
 <img width="940" height="781" alt="image" src="https://github.com/user-attachments/assets/e7b72f19-9fc6-47f4-bc50-cfa38e1b3061" /> 
+
 Verificamos sintaxis con **apache2ctl configtest** 
 <img width="940" height="66" alt="image" src="https://github.com/user-attachments/assets/4f999b48-9373-45e2-8502-9297adbf55d4" /> 
+
 Y reiniciamos Apache con **sudo systemctl restart apache2** 
 
 
