@@ -4,7 +4,7 @@ Ejercicios
 
 **1. Crea un directorio llamado "dir1" y otro llamado "dir2"**
    
-Creamos los dos directorios en /var/www/ que es el directorio por defecto donde Apache  
+Creamos los dos directorios en **/var/www/** que es el directorio por defecto donde Apache  
 
 guarda los sitios web  
 
@@ -15,21 +15,23 @@ directiva Require:**
 
 **Ambas están ya en desuso.** 
 
-<Directory /var/www/example1>  
+**<Directory /var/www/example1>**
 
-Order Deny,Allow  
+**Order Deny,Allow**
 
-Deny from All  
+**Deny from All**  
 
-Allow from 192.168.1.100  
-&lt;/Directory&gt; 
+**Allow from 192.168.1.100** 
+
+**&lt;/Directory&gt**
+
 
 
 En este primer caso, el orden es : primero se deniega a todos y luego se permite acceso al  
 
 recurso a la IP especificada. Concluimos diciendo que el único que tiene acceso al recurso es  
 
-la ip especificada ya que la última orden que se ejecuta es Allow.  
+la ip especificada ya que la última orden que se ejecuta es **Allow**.  
 
 La **directiva** equivalente con **Require**: 
 
@@ -37,17 +39,18 @@ La **directiva** equivalente con **Require**:
 
 Require ip 192.168.1.100  
 
-</Directory> 
+&lt;/Directory&gt; 
+
 
 **<Directory /var/www/example1>** 
 
-Order Allow,Deny 
+**Order Allow,Deny** 
 
-Deny from All 
+**Deny from All**
 
-Allow from 192.168.1.100 
+**Allow from 192.168.1.100** 
 
-</Directory> 
+**&lt;/Directory&gt;** 
 
 En este segundo caso: primero se permite acceso al recurso a la IP especificada y luego se  
 
@@ -57,12 +60,23 @@ que la orden **Denny** es la última que se ejecuta..
 
 La directiva equivalente con Require: 
 
-<Directory>  
+&lt;Directory&gt;  
    
 Require all denied  
 
-</Directory>  
-</Directory> 
+&lt;/Directory&gt; 
+
+**3. Para dir1** 
+
+**a. Perrmite el acceso de las peticiones provenientes de 10.3.0.100** 
+
+**b. Permite el acceso desde "marisma.intranet"** 
+
+**c. Permite el acceso desde cualquier subdominio de "marisma.intranet"** 
+
+**d. Permite el acceso de las peticiones provenientes de "10.3.0.100" con máscara "255.255.0.0"** 
+
+
 
 
 
