@@ -82,7 +82,7 @@ Require all denied
 
 <Directory /var/www/dir1> 
 
-Require ip 10.3.0.100  
+&nbsp;Require ip 10.3.0.100  
 
 Require host marisma.intranet  
 
