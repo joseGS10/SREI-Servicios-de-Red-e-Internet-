@@ -2,7 +2,7 @@
 
 Ejercicios 
 
-**1. Crea un directorio llamado "dir1" y otro llamado "dir2"**
+&nbsp;&nbsp;&nbsp;**1. Crea un directorio llamado "dir1" y otro llamado "dir2"**
    
 Creamos los dos directorios en **/var/www/** que es el directorio por defecto donde Apache  
 
@@ -12,18 +12,18 @@ guarda los sitios web
 
 <br> 
 
-**2. Explica qué diferencia existe entre ambos y muestra su equivalencia con la
+&nbsp;&nbsp;&nbsp;**2. Explica qué diferencia existe entre ambos y muestra su equivalencia con la
 directiva Require:** 
 
 **Ambas están ya en desuso.** 
 
 **<Directory /var/www/example1>**
 
-**Order Deny,Allow**
+&nbsp;&nbsp;&nbsp;&nbsp;**Order Deny,Allow**
 
-**Deny from All**  
+&nbsp;&nbsp;&nbsp;&nbsp;**Deny from All**  
 
-**Allow from 192.168.1.100** 
+&nbsp;&nbsp;&nbsp;&nbsp;**Allow from 192.168.1.100** 
 
 **&lt;/Directory&gt**
 
@@ -39,18 +39,18 @@ La **directiva** equivalente con **Require**:
 
 <Directory /var/www/example1>  
 
-Require ip 192.168.1.100  
+&nbsp;&nbsp;&nbsp;&nbsp;Require ip 192.168.1.100  
 
 &lt;/Directory&gt; 
 
 
 **<Directory /var/www/example1>** 
 
-**Order Allow,Deny** 
+&nbsp;&nbsp;&nbsp;&nbsp;**Order Allow,Deny** 
 
-**Deny from All**
+&nbsp;&nbsp;&nbsp;&nbsp;**Deny from All**
 
-**Allow from 192.168.1.100** 
+&nbsp;&nbsp;&nbsp;&nbsp;**Allow from 192.168.1.100** 
 
 **&lt;/Directory&gt;** 
 
@@ -64,13 +64,13 @@ La directiva equivalente con Require:
 
 &lt;Directory&gt;  
    
-Require all denied  
+&nbsp;&nbsp;&nbsp;&nbsp;Require all denied  
 
 &lt;/Directory&gt;  
 
 <br>
 
-**3. Para dir1** 
+&nbsp;&nbsp;&nbsp;**3. Para dir1** 
 
 **a. Perrmite el acceso de las peticiones provenientes de 10.3.0.100** 
 
