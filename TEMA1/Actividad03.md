@@ -2,7 +2,7 @@
 
 Ejercicios 
 
-&nbsp;&nbsp;&nbsp;**<kdb>1. Crea un directorio llamado "dir1" y otro llamado "dir2"</kdb>**
+&nbsp;&nbsp;&nbsp;**1. Crea un directorio llamado "dir1" y otro llamado "dir2">**
    
 Creamos los dos directorios en **/var/www/** que es el directorio por defecto donde Apache  
 
@@ -91,10 +91,37 @@ La directiva equivalente con Require:
 &nbsp;&nbsp;&nbsp;&nbsp;Requiere ip 10.3.0.100/16  
 
 &lt;/Directory&gt; 
-<br> 
+<br>  
 
+&nbsp;&nbsp;&nbsp;**4. Modifica la configuración de forma que el acceso a dir1:** 
 
+**Se permita a "marisma.intranet" y no se permita desde 10.3.0.101"** 
 
+&nbsp;&nbsp;&nbsp;<Directory /var/www/dir1> 
 
+<&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RequireAll> 
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Require host marisma.intranet 
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Require not ip 10.3.0.101 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</RequireAll> 
+
+&nbsp;&nbsp;&nbsp;</Directory> 
+<br>
+
+&nbsp;&nbsp;&nbsp;**5. Modifica la configuración de forma que el acceso a dir2:** 
+
+**Se permita a "10.3.0.100/8" y no a "marisma.intranet"** 
+
+&nbsp;&nbsp;&nbsp;<Directory /var/www/dir2>  
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<RequireAll>  
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Require ip 10.3.0.100/8  
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Require not host marisma.intranet  
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</requireAll>  
+
+&nbsp;&nbsp;&nbsp;</Directory> 
