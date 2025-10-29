@@ -1,6 +1,7 @@
 #ACTIVIDAD 3. TEMA1 
 
 Ejercicios 
+
 **1. Crea un directorio llamado "dir1" y otro llamado "dir2"**
    
 Creamos los dos directorios en /var/www/ que es el directorio por defecto donde Apache  
@@ -23,4 +24,19 @@ Deny from All
 Allow from 192.168.1.100  
 
 </Directory>  
+En este primer caso, el orden es : primero se deniega a todos y luego se permite acceso al  
+
+recurso a la IP especificada. Concluimos diciendo que el único que tiene acceso al recurso es  
+
+la ip especificada ya que la última orden que se ejecuta es Allow.  
+
+La **directiva** equivalente con **Require**: 
+
+<Directory /var/www/example1>  
+
+Require ip 192.168.1.100  
+
+</Directory> 
+
+
 
