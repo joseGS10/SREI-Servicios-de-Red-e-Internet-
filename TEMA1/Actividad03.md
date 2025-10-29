@@ -93,19 +93,21 @@ La directiva equivalente con Require:
 &lt;/Directory&gt; 
 <br>  
 
+
 &nbsp;&nbsp;&nbsp;**4. Modifica la configuración de forma que el acceso a dir1:** 
 
 **Se permita a "marisma.intranet" y no se permita desde 10.3.0.101"** 
 
 &nbsp;&nbsp;&nbsp;<Directory /var/www/dir1> 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<RequireAll> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;RequireAll&gt; 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Require host marisma.intranet 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Require not ip 10.3.0.101 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</RequireAll> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/RequireAll&gt;
+
 
 &nbsp;&nbsp;&nbsp;&lt;/Directory&gt;  
 <br>
@@ -115,12 +117,12 @@ La directiva equivalente con Require:
 
 &nbsp;&nbsp;&nbsp;<Directory /var/www/dir2>  
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<RequireAll>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;RequireAll&gt;  
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Require ip 10.3.0.100/8  
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Require not host marisma.intranet  
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</requireAll>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/requireAll&gt;  
 
 &nbsp;&nbsp;&nbsp;&lt;/Directory&gt; 
