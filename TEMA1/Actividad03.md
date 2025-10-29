@@ -10,6 +10,8 @@ guarda los sitios web
 
 **sudo mkdir /var/www/dir1 /var/www/dir2**
 
+<br> 
+
 **2. Explica qué diferencia existe entre ambos y muestra su equivalencia con la
 directiva Require:** 
 
@@ -65,6 +67,7 @@ La directiva equivalente con Require:
 Require all denied  
 
 &lt;/Directory&gt; 
+<br>
 
 **3. Para dir1** 
 
