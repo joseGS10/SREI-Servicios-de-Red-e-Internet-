@@ -99,7 +99,7 @@ La directiva equivalente con Require:
 
 &nbsp;&nbsp;&nbsp;<Directory /var/www/dir1> 
 
-<&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RequireAll> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<RequireAll> 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Require host marisma.intranet 
 
@@ -107,9 +107,8 @@ La directiva equivalente con Require:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</RequireAll> 
 
-&nbsp;&nbsp;&nbsp;</Directory> 
+&nbsp;&nbsp;&nbsp;&lt;/Directory&gt;  
 <br>
-
 &nbsp;&nbsp;&nbsp;**5. Modifica la configuración de forma que el acceso a dir2:** 
 
 **Se permita a "10.3.0.100/8" y no a "marisma.intranet"** 
@@ -124,4 +123,4 @@ La directiva equivalente con Require:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</requireAll>  
 
-&nbsp;&nbsp;&nbsp;</Directory> 
+&nbsp;&nbsp;&nbsp;&lt;/Directory&gt; 
