@@ -14,6 +14,7 @@ Para este script tenemos que trabajar sobre el fichero **ports.conf** por lo que
 **sudo cp /etc/apache2/ports.conf ports.bak** 
 
 <img width="942" height="341" alt="image" src="https://github.com/user-attachments/assets/392fd27d-6d19-4831-be3f-391b77694e26" /> 
+
 A continuación, editamos el script 
 
 **sudo nano addport.sh** 
@@ -35,7 +36,8 @@ Y ahora ponemos a prueba el script con los siguientes ordenes :
 
 1)	**sudo ./addport.sh 88**
    
-<img width="940" height="75" alt="image" src="https://github.com/user-attachments/assets/e88e12c1-6bba-4ed9-bf97-83cb4fc65c4f" /> 
+<img width="940" height="75" alt="image" src="https://github.com/user-attachments/assets/e88e12c1-6bba-4ed9-bf97-83cb4fc65c4f" />  
+
 Abrimos el fichero **/etc/apache2/ports.conf** para comprobar que se ha insertado el puerto 88 
 <img width="940" height="392" alt="image" src="https://github.com/user-attachments/assets/08716aaf-d18f-4ca6-935e-14fb23823097" /> 
 
@@ -55,19 +57,25 @@ comprobar que no existe dicho dominio en el fichero hosts.**
 Al igual que antes, antes de nada, creamos una copia de seguridad del fichero sobre el que vamos a trabajar. 
 
 **sudo cp /etc/hosts /etc/hosts_bak** 
-<img width="940" height="214" alt="image" src="https://github.com/user-attachments/assets/c16ec665-5e0b-4eca-b28a-6f66205bdae2" /> 
+<img width="940" height="214" alt="image" src="https://github.com/user-attachments/assets/c16ec665-5e0b-4eca-b28a-6f66205bdae2" />  
+
 Editamos un script con el nombre adddomainip.sh el cual debe recoger 2 parámetros: el **nombre de dominio** y la **ip** 
 
 **sudo nano adddomainip.sh** 
 <img width="940" height="458" alt="image" src="https://github.com/user-attachments/assets/cee2fd16-5264-44f7-90f4-5f8906124793" /> 
+
 Le damos permisos de ejecución: **sudo chmod + x adddomainip.sh** 
 
 
 Hacemos las comprobaciones pertinentes para ver que el script funciona: 
 <img width="940" height="97" alt="image" src="https://github.com/user-attachments/assets/f79fdc67-b144-41df-b7b8-1498d42b4d3c" /> 
+
 <img width="940" height="85" alt="image" src="https://github.com/user-attachments/assets/1051a84a-edb7-4b9b-b24d-0cbf1cc3bbee" /> 
+
 <img width="940" height="54" alt="image" src="https://github.com/user-attachments/assets/0e609734-503e-4e86-8935-32ef7878e52e" /> 
+
 <img width="940" height="61" alt="image" src="https://github.com/user-attachments/assets/9c3568a7-e1ee-4793-b57c-3e59ebb7fb3c" /> 
+
 El contenido del **fichero hosts** después de estas operaciones.  
 
 <img width="940" height="352" alt="image" src="https://github.com/user-attachments/assets/20b50de6-44aa-4888-b986-82a4adf38fa4" /> 
@@ -79,6 +87,7 @@ un mensaje.**
 **sudo nano crear_pagina.sh** 
 
 <img width="940" height="591" alt="image" src="https://github.com/user-attachments/assets/24573068-0b20-40d9-8faa-b8f28b9504f8" /> 
+
 Le damos permiso de ejecución. 
 
 **sudo chmod + x  crear_pagina.sh** 
