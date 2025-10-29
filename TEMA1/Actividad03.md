@@ -22,8 +22,8 @@ Order Deny,Allow
 Deny from All  
 
 Allow from 192.168.1.100  
-
 </Directory>  
+
 En este primer caso, el orden es : primero se deniega a todos y luego se permite acceso al  
 
 recurso a la IP especificada. Concluimos diciendo que el único que tiene acceso al recurso es  
