@@ -2,7 +2,7 @@
 
 Ejercicios 
 
-kdb&nbsp;&nbsp;&nbsp;**1. Crea un directorio llamado "dir1" y otro llamado "dir2"**kdb
+&nbsp;&nbsp;&nbsp;**kdb1. Crea un directorio llamado "dir1" y otro llamado "dir2"kdb**
    
 Creamos los dos directorios en **/var/www/** que es el directorio por defecto donde Apache  
 
