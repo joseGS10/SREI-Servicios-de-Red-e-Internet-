@@ -61,6 +61,7 @@ La directiva equivalente con Require:
 Require all denied  
 
 </Directory>  
+</Directory> 
 
 
 
