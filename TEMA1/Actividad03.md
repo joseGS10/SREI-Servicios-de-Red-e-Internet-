@@ -66,7 +66,8 @@ La directiva equivalente con Require:
    
 Require all denied  
 
-&lt;/Directory&gt; 
+&lt;/Directory&gt;  
+
 <br>
 
 **3. Para dir1** 
@@ -79,6 +80,18 @@ Require all denied
 
 **d. Permite el acceso de las peticiones provenientes de "10.3.0.100" con máscara "255.255.0.0"** 
 
+<Directory /var/www/dir1> 
+
+Require ip 10.3.0.100  
+
+Require host marisma.intranet  
+
+Require host .marisma.intranet  
+
+Requiere ip 10.3.0.100/16  
+
+&lt;/Directory&gt; 
+<br> 
 
 
 
