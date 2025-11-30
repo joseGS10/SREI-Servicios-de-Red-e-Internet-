@@ -44,7 +44,10 @@ sudo apt update (actualiza la lista de programas disponibles)
 
 sudo apt upgrade (descarga e instala versiones más nuevas de los programas ya instalados) 
 
-Pasamos a instalar Apache.			sudo apt install apache2 
+Pasamos a instalar Apache.			**sudo apt install apache2** 
 
 
-Verificamos su estado.			sudo systemctl status apache2
+Verificamos su estado.			**sudo systemctl status apache2**
+
+<img width="940" height="381" alt="image" src="https://github.com/user-attachments/assets/416b7d7c-43e8-47b2-bff8-532cb228ff98" /> 
+
