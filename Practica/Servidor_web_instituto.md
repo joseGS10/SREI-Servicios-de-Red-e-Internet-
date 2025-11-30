@@ -1,4 +1,4 @@
-# **Práctica Servidores web**
+# Práctica Servidores web
 1º trimestre
 
 Vamos a instalar un servidor web interno para un instituto. Se Pide:
@@ -37,3 +37,14 @@ Nombre equipo: Ubuntu25.10
 
 Contraseña: 1234 
 
+## PASO 2. Instalación del Servidor Web APACHE.
+Antes de nada, vamos a actualizar el sistema sobre el que vamos a trabajar (actualizaciones software y seguridad). 
+
+sudo apt update (actualiza la lista de programas disponibles) 
+
+sudo apt upgrade (descarga e instala versiones más nuevas de los programas ya instalados) 
+
+Pasamos a instalar Apache.			sudo apt install apache2 
+
+
+Verificamos su estado.			sudo systemctl status apache2
