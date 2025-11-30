@@ -10,4 +10,4 @@ Servicios de Red e Internet
 | [Actividad_03](/TEMA1/Actividad03.md) | Directiva Directory |
 
 ## Practica Final. Servidor Web Instituto 
-[Practica](/Práctica/Servidor_web_instituto.md) | Práctica final Servidor Web Instituto |
+[Practica](/Practica/Servidor_web_instituto.md) | Práctica final Servidor Web Instituto |
