@@ -20,3 +20,12 @@ Vamos a instalar un servidor web interno para un instituto. Se Pide:
 •	Instala un segundo servidor de tu elección (nginx, lighttpd) bajo el dominio “servidor2.centro.intranet”. Debes configurarlo para que sirva en el puerto 8080 y haz los cambios necesarios para ejecutar php. Instala phpmyadmin.
 
 
+## PASO 1. Creación de una MV en Proxmox con el sistema operativo Ubuntu Desktop 25.10.
+Dicha MV la crearemos en el nodo marisma000 y llevará por nombre “Practica-Servidor-Web-Instituto-JB-SRI”( SID: 402). Su configuración hardware:
+•	2 núcleos
+•	8 GB de RAM
+•	50 GB de disco duro
+Utilizaremos la versión Ubuntu  desktop 25.10.
+Usuario: Jose	
+Nombre equipo: Ubuntu25.10
+Contraseña: 1234
