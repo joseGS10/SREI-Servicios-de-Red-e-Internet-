@@ -51,3 +51,18 @@ Verificamos su estado.			**sudo systemctl status apache2**
 
 <img width="940" height="381" alt="image" src="https://github.com/user-attachments/assets/416b7d7c-43e8-47b2-bff8-532cb228ff98" /> 
 
+Verificación desde navegador		**http:/localhost** 
+
+<img width="940" height="551" alt="image" src="https://github.com/user-attachments/assets/d3cc5148-b196-4624-88c9-77f0d182b13a" /> 
+
+Verificación desde línea de comandos	**curl -I http:/localhost** 
+
+<img width="940" height="331" alt="image" src="https://github.com/user-attachments/assets/395490c7-6a50-4de7-a4e8-314fc880aca5" /> 
+
+Configuración del firewall para permitir tráfico HTTP por el puerto 80. 
+
+**sudo ufw allow in “Apache”** 
+
+
+
+
