@@ -63,6 +63,14 @@ Configuración del firewall para permitir tráfico HTTP por el puerto 80.
 
 **sudo ufw allow in “Apache”** 
 
+## PASO 3. Creación de los dominios centro.intranet y departamentos.centro.intranet  
+
+Creación de los dominios centro.intranet y departamentos.centro.intranet 
+
+Usaremos ambos dominios mediante los archivos .hosts 
+
+Este archivo se encuentra en /etc/hosts y tendremos que editarlo con los nombres de los nuevos dominios apuntando a 127.0.0.1 ya que el servidor web y el navegador están en la misma máquina, es decir, los dominios internos apuntarán a la propia máquina.
+**sudo nano /etc/hosts**
 
 
 
