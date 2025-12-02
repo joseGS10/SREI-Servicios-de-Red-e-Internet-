@@ -10,6 +10,8 @@ Servicios de Red e Internet
 | [Actividad_03](/TEMA1/Actividad03.md) | Directiva Directory |
 | [Actividad_04](/TEMA1/Actividad04.md) | Expresiones regulares |
 | [Actividad_05](/TEMA1/Actividad05.md) | Reescritura en Apache |
+| [Actividad_06](/TEMA1/Actividad06.md) | Virtual host |
+
 
 ## Practica Final. Servidor Web Instituto 
 [Practica](/Practica/Servidor_web_instituto.md) | Práctica final Servidor Web Instituto |
