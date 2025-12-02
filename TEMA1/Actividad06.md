@@ -89,7 +89,7 @@ En nuestro caso estamos trabajando en local, por lo que necesitamos modificar el
 **sudo nano /etc/hosts** 
 
 <img width="973" height="444" alt="image" src="https://github.com/user-attachments/assets/b87fa296-dd03-456d-a638-cb0b43263c37" /> 
-Guardamos y salimos. **( Ctrl + o), Intro, (Ctrl + x)** 
+Guardamos y salimos. ( Ctrl + o), Intro, (Ctrl + x)
 
 
 **Paso 7.** Comprobación de que nuestros sitios están activos y funcionando.  
