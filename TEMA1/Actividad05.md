@@ -14,6 +14,19 @@
       
 </Directory> 
 
+Ejercicio1: **Reescribir URL** 
+
+Partimos del fichero operacion.php el cual tenemos que crear y ubicar en el DocumentRoot. 
+
+Para ello, nos movemos al DocumentRoot. 
+
+**cd /var/www/html** 
+
+Y ahora creamos el fichero **operación.php** con 
+
+**sudo nano operación.php** 
+
+
 
 
 
