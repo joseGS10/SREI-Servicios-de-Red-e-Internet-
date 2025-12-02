@@ -60,7 +60,9 @@ Creamos contenido para privado2
 Con usuario1 y usuario2 entra sin problema previo logueo. 
 <img width="940" height="462" alt="image" src="https://github.com/user-attachments/assets/5dd64c08-822a-4dc6-8a03-732edc924c5c" /> 
 Con los usuarios 3,4 y 5 no me permite la entrada y se queda preguntando la password continuamente. Si le doy a Cancelar me da el siguiente mensaje. 
+
 <img width="940" height="165" alt="image" src="https://github.com/user-attachments/assets/80a5ec28-b8ed-44f9-9bb6-b22fafe6fbe8" />  
+
 **Ejercicio 5.** En el directorio privado2 haz que sólo sea accesible desde el localhost, y estudia cómo se comporta la autorización si ponemos: satisfy any, satisfy all 
 
 **Caso 1: Satisfy All.** Aquí para poder entrar debes cumplir la condición de la IP y además la contraseña. 
