@@ -63,15 +63,40 @@ Para ello, **sudo nano /etc/apache2/sites-available/000-default.conf**
 
 <img width="943" height="472" alt="image" src="https://github.com/user-attachments/assets/979c9d1a-064c-48d7-947e-a19a6a7b5b7d" /> 
 
-**sudo apache2ctl configtest**   comprobamos sintaxis OK?	 
+**sudo apache2ctl configtest**  -> comprobamos sintaxis OK?	 
 
-**sudo systemctl restart apache2**    reiniciamos Apache para que coja los cambios 
+**sudo systemctl restart apache2**   -> reiniciamos Apache para que coja los cambios 
 
 Por último, probamos que funciona dicha reescritura. Para ello desde el navegador  y va OK. 
 
 <img width="941" height="166" alt="image" src="https://github.com/user-attachments/assets/444a1a2a-5444-4391-a4a5-abff2a1ffb6a" /> 
 
 
+Ejercicio 2.**Cambiar la extensión de los ficheros** 
+
+Si queremos usar la extensión do en vez de html podriamos usar este .htacces 
+
+	Options FollowSymLinks 
+	
+	RewriteEngine On 
+	
+	RewriteRule ^(.+)\.do$ $1.html [nc] 
+	
+
+Pero el acceder a la misma página con dos URL distintas está penalizado. Para evitarlo se hace una redirección 
+
+	RewriteRule ^(.+)\.do$ $1.html [r,nc] 
+	
+
+No estoy utilizando .htacces 
+
+Entramos en sudo nano /etc/apache2/sites-available/000-default.conf 
+
+<img width="940" height="575" alt="image" src="https://github.com/user-attachments/assets/1ada8ddc-1e39-41f6-8d76-2bd362e9bb40" /> 
+
+comprobamos sintaxis y reiniciamos. 
+
+<img width="940" height="74" alt="image" src="https://github.com/user-attachments/assets/21087bce-f6cc-4902-bcb9-1430022437db" /> 
 
 
 
