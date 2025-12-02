@@ -66,8 +66,7 @@ Con los usuarios 3,4 y 5 no me permite la entrada y se queda preguntando la pass
 <img width="940" height="389" alt="image" src="https://github.com/user-attachments/assets/e2b8729f-a29f-4751-a2f2-52e177cbcf5f" /> 
 **Caso 2: Satisfy Any.** Aquí, si cumples la IP pasas, si no, te requiero la contraseña 
 <img width="940" height="388" alt="image" src="https://github.com/user-attachments/assets/d21d7f5e-caba-43a4-a805-d4f19402cccb" /> 
-
-
+ 
 
 
 
