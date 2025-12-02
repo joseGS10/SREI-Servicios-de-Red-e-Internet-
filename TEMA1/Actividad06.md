@@ -92,13 +92,18 @@ En nuestro caso estamos trabajando en local, por lo que necesitamos modificar el
 Guardamos y salimos. **( Ctrl + o), Intro, (Ctrl + x)** 
 
 
-**Paso 7.** Comprobación de que nuestros sitios están activos y funcionando. 
+**Paso 7.** Comprobación de que nuestros sitios están activos y funcionando.  
 
-Comprobación mediante el navegador. 
-<img width="1004" height="182" alt="image" src="https://github.com/user-attachments/assets/5c881d44-75cb-486f-840b-afae51b22396" /> 
-<img width="1004" height="191" alt="image" src="https://github.com/user-attachments/assets/df1e28b0-0dae-4b8c-a7b2-a3c54fb9ca1a" /> 
-También podemos hacer comprobaciones desde línea de comandos 
-<img width="1004" height="272" alt="image" src="https://github.com/user-attachments/assets/426d0c1e-da3c-4931-bcc0-873a1d027914" /> 
+Comprobación mediante el navegador.  
+
+<img width="1004" height="182" alt="image" src="https://github.com/user-attachments/assets/5c881d44-75cb-486f-840b-afae51b22396" />  
+
+<img width="1004" height="191" alt="image" src="https://github.com/user-attachments/assets/df1e28b0-0dae-4b8c-a7b2-a3c54fb9ca1a" />  
+
+También podemos hacer comprobaciones desde línea de comandos  
+
+<img width="1004" height="272" alt="image" src="https://github.com/user-attachments/assets/426d0c1e-da3c-4931-bcc0-873a1d027914" />  
+
 <img width="992" height="275" alt="image" src="https://github.com/user-attachments/assets/d6f1bb13-4bfd-41a9-96a3-2b88bd3eb3df" /> 
 
 
