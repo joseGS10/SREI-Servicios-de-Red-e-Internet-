@@ -98,6 +98,25 @@ comprobamos sintaxis y reiniciamos.
 
 <img width="940" height="74" alt="image" src="https://github.com/user-attachments/assets/21087bce-f6cc-4902-bcb9-1430022437db" /> 
 
+Ejercicio 3. **Crear URL amigables.** 
+
+El fichero del punto 1 operación.php se podría llamar de otra forma también: 
+
+	http://localhost/suma/8/6 
+	
+Para ello, tendremos que crear lo siguiente en 
+
+<img width="940" height="504" alt="image" src="https://github.com/user-attachments/assets/1b17ffb1-0e1a-4a96-8b95-0dc57e872f2b" /> 
+
+comprobamos sintaxis 
+
+**apachectl -t	** 
+
+Hay que reiniciar para que os cambios tengan efecto. 
+
+**sudo systemctl restart apache2** 
+
+
 
 
 
