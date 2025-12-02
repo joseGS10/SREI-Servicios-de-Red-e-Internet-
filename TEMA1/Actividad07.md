@@ -35,6 +35,7 @@ Comprobamos que se puede acceder con todos los usuarios.
 Creamos contenido para privado1 
 <img width="940" height="86" alt="image" src="https://github.com/user-attachments/assets/1f07d9c7-000e-4d18-bf59-964e3ea0e1d6" /> 
 <img width="730" height="198" alt="image" src="https://github.com/user-attachments/assets/f7f3d5e1-b811-4404-96ef-d55cd1cd19d1" /> 
+
 Conseguimos entrar con los cinco usuarios previa identificación.  
 
 **Ejercicio 4.** Crea un directorio llamado privado2 que permita el acceso sólo a los usuarios del grupo1. 
