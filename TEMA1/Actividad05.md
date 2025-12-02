@@ -45,7 +45,9 @@ Para ello:
 
 	**sudo systemctl restart apache2**
 
-   <img width="941" height="126" alt="image" src="https://github.com/user-attachments/assets/a9771a9f-e3d1-41c1-8c3f-523    2ec126c52" /> 
+<img width="941" height="126" alt="image" src="https://github.com/user-attachments/assets/6dcd48e4-9c7a-4914-af78-057cbe02135a" /> 
+
+
 2.	Creamos la directiva Directory siguiente: 
 
 <Directory /var/www/html> 
@@ -59,12 +61,8 @@ Para ello:
 
 Para ello, **sudo nano /etc/apache2/sites-available/000-default.conf** 
 
-<img width="943" height="472" alt="image" src="https://github.com/user-attachments/assets/4ecaa620-8ab5-46f7-9ffa- 8cd1af8612bd" /> 
+<img width="943" height="472" alt="image" src="https://github.com/user-attachments/assets/979c9d1a-064c-48d7-947e-a19a6a7b5b7d" /> 
 
-
-
-   
- 
 
 
 
