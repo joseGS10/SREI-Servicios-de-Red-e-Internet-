@@ -110,11 +110,24 @@ Para ello, tendremos que crear lo siguiente en
 
 comprobamos sintaxis 
 
-**apachectl -t	** 
+**apachectl -t** 
 
 Hay que reiniciar para que os cambios tengan efecto. 
 
 **sudo systemctl restart apache2** 
+
+
+Ejercicio 4. **Acortar URL.** 
+
+Para ello vamos a crear la siguiente regla de reescritura 
+
+**RewriteRule ^buscar/ (.+) http://www.google.es/search?q=$1** 
+
+de esta forma cuando yo escribo en el buscador buscar/ (lo que sea) → busca dentro de google (ese, lo que sea). 
+
+<img width="940" height="302" alt="image" src="https://github.com/user-attachments/assets/261d71be-2266-43d6-8b0a-b47b8d690912" /> 
+
+Guardamos, comprobamos sintaxis y reiniciamos.	 
 
 
 
