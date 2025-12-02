@@ -35,6 +35,36 @@ Llamamos a operacion.php con los siguientes valores marcados en la URL.
 <img width="940" height="204" alt="image" src="https://github.com/user-attachments/assets/7ff17a15-2700-4cfd-a5e3-f9e626bc23f0" /> 
 Y funciona. 
 
+En este ejercicio, queremos poder modificar la forma en que llamamos al fichero operación.php. La forma normal de llamarlo es escribiendo en la URL del navegador  http://localhost/operacion.php?op=suma&op1=6&op2=8  y queremos reescribir la URL de forma que podamos llamarlo en vez de como php como html de la siguiente forma http://localhost/operacion.html?op=suma&op1=6&op2=8 
+
+Para ello: 
+
+1.	Activamos el módulo mod_rewrite.
+   
+    **udo a2enmod rewrite** 
+
+	**sudo systemctl restart apache2**
+
+   <img width="941" height="126" alt="image" src="https://github.com/user-attachments/assets/a9771a9f-e3d1-41c1-8c3f-523    2ec126c52" /> 
+2.	Creamos la directiva Directory siguiente: 
+
+<Directory /var/www/html> 
+
+	RewriteEngine On 
+    
+	RewriteRule  ^operación\.html$ operación.php 
+    
+</Directory> 
+
+
+Para ello, **sudo nano /etc/apache2/sites-available/000-default.conf** 
+
+<img width="943" height="472" alt="image" src="https://github.com/user-attachments/assets/4ecaa620-8ab5-46f7-9ffa- 8cd1af8612bd" /> 
+
+
+
+   
+ 
 
 
 
